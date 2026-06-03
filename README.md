@@ -81,10 +81,37 @@ Proyek_IMK_Uangku/
 
 ## 👥 Tim Pengembang
 
-- **Muhammad Jepri** *(NIM: 255410014)*
-- **Fidelia Ping** *(NIM: 245410012)*
-- **MELIA FRANSISKA SUNG** *(NIM: 245410036)*
-- **WENSESLAUS KOPAQ WARAQRATU** *(NIM: 245410029)*
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Emzyjeppp">
+        <img src="https://github.com/Emzyjeppp.png" width="100px;" alt="Emzyjeppp"/><br />
+        <b>Emzyjeppp (Muhammad Jepri)</b>
+      </a>
+      <br />
+      💻 Developer
+      <br />
+      NIM: 255410014
+    </td>
+    <td align="center">
+      <a href="https://github.com/finkyyy">
+        <img src="https://github.com/finkyyy.png" width="100px;" alt="finkyyy"/><br />
+        <b>finkyyy (Fidelia Ping)</b>
+      </a>
+      <br />
+      📋 Product Manager
+      <br />
+      NIM: 245410012
+    </td>
+  </tr>
+</table>
+
+### 🎨 UI/UX Designer
+
+- **Melia Fransiska Sung** *(NIM: 245410036)*  
+- **Wenseslaus Kopaq Waraqratu** *(NIM: 245410029)*  
+
 ---
+
 
 Didesain dan dikembangkan dengan ❤️ untuk membantu mahasiswa lebih melek finansial.
