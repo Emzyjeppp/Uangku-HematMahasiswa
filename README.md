@@ -27,25 +27,33 @@ Sistem aplikasi ini berjalan menggunakan memori *browser* (`localStorage`) berka
 Pastikan Python sudah terinstal di komputermu. Ikuti langkah berikut untuk menjalankan aplikasi secara lokal:
 
 1. Clone repositori ini:
-   ```bash
-   git clone https://github.com/Emzyjeppp/Uangku-HematMahasiswa.git
+
+```bash
+git clone https://github.com/Emzyjeppp/Uangku-HematMahasiswa.git
 ```
 
 2. Masuk ke direktori proyek:
-   ```bash
-   cd Uangku-HematMahasiswa/Proyek_IMK_Uangku
+
+```bash
+cd Uangku-HematMahasiswa/Proyek_IMK_Uangku
 ```
 
 3. Instal pustaka Flask (jika belum ada):
-   ```bash
+
+```bash
 pip install flask
 ```
 
 4. Jalankan mesin aplikasi:
-   ```bash
+
+```bash
 python app.py
 ```
 
 5. Akses di Browser:
-   Buka peramban (*browser*) dan kunjungi tautan lokal berikut:
-   `[http://127.0.0.1:5000](http://127.0.0.1:5000)`
+
+Buka peramban (*browser*) dan kunjungi tautan lokal berikut:
+
+```txt
+http://127.0.0.1:5000
+```
