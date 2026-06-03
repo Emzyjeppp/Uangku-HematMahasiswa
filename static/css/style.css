@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+body { font-family: 'Plus Jakarta Sans', sans-serif; }
+.mobile-frame { width: 390px; height: 844px; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+input[type="date"]::-webkit-calendar-picker-indicator { opacity: 0; cursor: pointer; width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
+.donut-chart { background: conic-gradient(#4CAF50 0% 45%, #3B82F6 45% 65%, #FBBF24 65% 80%, #F43F5E 80% 90%, #A855F7 90% 100%); }
+.progress-ring { background: conic-gradient(#4CAF50 0% 40%, #C8E6C9 40% 100%); }

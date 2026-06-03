@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UANGKU - Notifikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-slate-800 flex justify-center items-center min-h-screen">
+    <div class="bg-white mobile-frame shadow-2xl relative overflow-hidden flex flex-col">
+        <div class="flex items-center p-6 bg-white shrink-0">
+            <a href="{{ url_for('index') }}" class="text-slate-800 text-xl"><i class="fas fa-arrow-left"></i></a>
+            <h1 class="flex-grow text-center text-sm font-bold text-slate-800 pr-5">Notifikasi</h1>
+        </div>
+        <div class="flex-grow overflow-y-auto px-6 pt-2 pb-10 no-scrollbar">
+            <h3 class="text-xs font-bold text-slate-800 mb-4">Hari ini</h3>
+            <div class="space-y-4 mb-8">
+                <div class="bg-[#F8BBD0] rounded-2xl p-4 flex gap-4 relative"><div class="text-red-500 text-2xl mt-1 shrink-0"><i class="fas fa-exclamation-triangle"></i></div><div class="flex-grow pr-6"><h4 class="text-[11px] font-bold text-slate-800 mb-0.5">Budget Harian Hampir Habis</h4><p class="text-[10px] text-slate-600 font-medium">Pengeluaran kamu sudah 90%. Melewati budget harian mu</p></div><span class="absolute bottom-3 right-4 text-[9px] text-slate-500 font-bold">10.30</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

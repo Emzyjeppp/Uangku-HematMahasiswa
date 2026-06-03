@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UANGKU - Tambah Pengeluaran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-slate-800 flex justify-center items-center min-h-screen">
+    <div class="bg-white mobile-frame shadow-2xl relative overflow-hidden flex flex-col">
+        <div class="flex items-center p-6 bg-white shrink-0">
+            <a href="{{ url_for('index') }}" class="text-slate-800 text-xl"><i class="fas fa-arrow-left"></i></a>
+            <h1 class="flex-grow text-center text-sm font-bold text-slate-800 pr-5">Tambah Pengeluaran</h1>
+        </div>
+        <div class="flex-grow overflow-y-auto p-6 pt-2">
+            <div class="bg-[#F8BBD0] rounded-2xl p-6 mb-8">
+                <p class="text-xs font-semibold text-slate-800 mb-1">Nominal</p>
+                <div class="flex items-center"><span class="text-2xl font-bold text-slate-800 mr-1">Rp</span><input type="number" id="input-nominal" placeholder="0" value="20000" class="bg-transparent text-4xl font-bold text-slate-800 outline-none w-full placeholder-slate-500"></div>
+            </div>
+            <!-- Kategori -->
+            <div class="mb-8">
+                <h3 class="text-sm font-bold text-slate-800 mb-4">Kategori</h3>
+                <div class="flex gap-4 overflow-x-auto pb-2 no-scrollbar">
+                    
+                    <!-- Kategori 1: Makanan (Default Aktif) -->
+                    <div class="category-item flex flex-col items-center gap-2 min-w-[60px] cursor-pointer" data-kategori="Makanan">
+                        <div class="icon-box w-14 h-14 bg-green-100 border-2 border-[#4CAF50] rounded-2xl flex items-center justify-center text-2xl shadow-sm">🍣</div>
+                        <span class="category-text text-[10px] font-bold text-[#4CAF50]">Makanan</span>
+                    </div>
+
+                    <!-- Kategori 2: Transportasi -->
+                    <div class="category-item flex flex-col items-center gap-2 min-w-[60px] cursor-pointer" data-kategori="Transportasi">
+                        <div class="icon-box w-14 h-14 bg-blue-50 border border-slate-100 rounded-2xl flex items-center justify-center text-2xl shadow-sm">🚕</div>
+                        <span class="category-text text-[10px] font-semibold text-slate-500">Transportasi</span>
+                    </div>
+
+                    <!-- Kategori 3: Nongkrong -->
+                    <div class="category-item flex flex-col items-center gap-2 min-w-[60px] cursor-pointer" data-kategori="Nongkrong">
+                        <div class="icon-box w-14 h-14 bg-yellow-50 border border-slate-100 rounded-2xl flex items-center justify-center text-2xl shadow-sm">☕</div>
+                        <span class="category-text text-[10px] font-semibold text-slate-500">Nongkrong</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="mb-6">
+                <h3 class="text-sm font-bold text-slate-800 mb-2">Tanggal</h3>
+                <div class="relative"><input type="date" id="input-tanggal" value="2026-05-09" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 outline-none focus:border-[#4CAF50]"><i class="far fa-calendar-alt absolute right-4 top-1/2 transform -translate-y-1/2 text-slate-400 pointer-events-none text-lg"></i></div>
+            </div>
+            <div class="mb-8">
+                <h3 class="text-sm font-bold text-slate-800 mb-2">Catatan (Opsional)</h3>
+                <input type="text" id="input-catatan" placeholder="Masukkan catatan..." value="Sushi" class="w-full border border-slate-200 rounded-xl px-4 py-3 text-sm font-semibold text-slate-700 outline-none focus:border-[#4CAF50]">
+            </div>
+        </div>
+        <div class="p-6 bg-white border-t border-slate-50"><button class="w-full bg-[#4CAF50] text-white py-4 rounded-xl font-bold text-sm shadow-lg shadow-green-200 hover:bg-green-600 transition">Simpan</button></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

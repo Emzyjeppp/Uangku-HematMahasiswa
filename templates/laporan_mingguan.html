@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UANGKU - Laporan Mingguan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-slate-800 flex justify-center items-center min-h-screen">
+    <div class="bg-[#FAFAFA] mobile-frame shadow-2xl relative overflow-hidden flex flex-col">
+        <div class="flex justify-between items-center p-6 bg-white shrink-0 shadow-sm relative z-10">
+            <a href="{{ url_for('index') }}" class="text-slate-800"><i class="fas fa-arrow-left text-lg"></i></a>
+            <h1 class="text-sm font-bold text-slate-800 tracking-wide">Detail Laporan</h1>
+            <i class="far fa-calendar-alt text-slate-700 text-lg"></i>
+        </div>
+        <div class="flex-grow overflow-y-auto p-5 no-scrollbar pb-28 bg-white">
+            <div class="flex bg-slate-100 rounded-full p-1 mb-6">
+                <button class="flex-1 bg-[#4CAF50] text-white text-xs font-bold py-2.5 rounded-full shadow-sm">Mingguan</button>
+                <a href="{{ url_for('laporan') }}" class="flex-1 text-center text-slate-500 text-xs font-bold py-2.5 rounded-full hover:bg-slate-200 transition">Bulanan</a>
+            </div>
+            <div class="flex justify-center items-center gap-6 mb-6">
+                <i class="fas fa-chevron-left text-slate-400 cursor-pointer hover:text-slate-700"></i><h2 class="text-sm font-bold text-slate-800">Mei 2026</h2><i class="fas fa-chevron-right text-slate-800 cursor-pointer"></i>
+            </div>
+            <h3 class="text-xs font-bold text-slate-800 mb-6">Pengeluaran Minggu Ini</h3>
+            <div class="relative h-48 w-full mb-8">
+                <div class="absolute inset-0 pl-10 flex justify-between items-end pb-6 pt-2">
+                    <div class="flex flex-col items-center justify-end h-full w-8"><div class="w-5 bg-[#A5D6A7] rounded-t-sm" style="height: 50%;"></div></div>
+                    <div class="flex flex-col items-center justify-end h-full w-8"><div class="w-5 bg-[#A5D6A7] rounded-t-sm" style="height: 35%;"></div></div>
+                    <div class="flex flex-col items-center justify-end h-full w-8"><div class="w-5 bg-[#A5D6A7] rounded-t-sm" style="height: 80%;"></div></div>
+                    <div class="flex flex-col items-center justify-end h-full w-8"><div class="w-5 bg-[#FFC107] rounded-t-sm" style="height: 100%;"></div></div>
+                    <div class="flex flex-col items-center justify-end h-full w-8"><div class="w-5 bg-[#A5D6A7] rounded-t-sm" style="height: 45%;"></div></div>
+                    <div class="flex flex-col items-center justify-end h-full w-8"><div class="w-5 bg-[#A5D6A7] rounded-t-sm" style="height: 55%;"></div></div>
+                    <div class="flex flex-col items-center justify-end h-full w-8"><div class="w-5 bg-[#A5D6A7] rounded-t-sm" style="height: 40%;"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 bg-white border-t border-slate-100 px-6 py-3 flex justify-between items-center z-50">
+            <a href="{{ url_for('index') }}" class="flex flex-col items-center gap-1 text-slate-300 hover:text-[#4CAF50] transition"><i class="fas fa-home text-lg"></i><span class="text-[9px] font-bold">Beranda</span></a>
+            <a href="{{ url_for('transaksi') }}" class="flex flex-col items-center gap-1 text-slate-300 hover:text-[#4CAF50] transition"><i class="fas fa-list text-lg"></i><span class="text-[9px] font-bold">Transaksi</span></a>
+            <div class="relative -top-5"><a href="{{ url_for('tambah_pengeluaran') }}"><button class="w-14 h-14 bg-[#4CAF50] text-white rounded-full flex items-center justify-center text-2xl shadow-lg shadow-green-200 border-4 border-white hover:scale-105 transition"><i class="fas fa-plus"></i></button></a></div>
+            <a href="{{ url_for('laporan') }}" class="flex flex-col items-center gap-1 text-[#4CAF50]"><i class="fas fa-chart-bar text-lg"></i><span class="text-[9px] font-bold">Laporan</span></a>
+            <a href="{{ url_for('profil') }}" class="flex flex-col items-center gap-1 text-slate-300 hover:text-[#4CAF50] transition"><i class="far fa-user text-lg"></i><span class="text-[9px] font-bold">Akun</span></a>
+        </div>
+    </div>
+</body>
+</html>

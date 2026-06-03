@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UANGKU - Target Tabungan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-slate-800 flex justify-center items-center min-h-screen">
+    <div class="bg-white mobile-frame shadow-2xl relative overflow-hidden flex flex-col">
+        <div class="flex items-center p-6 bg-white shrink-0 pb-2">
+            <a href="{{ url_for('profil') }}" class="text-slate-800 text-xl"><i class="fas fa-arrow-left"></i></a>
+            <h1 class="flex-grow text-center text-sm font-bold text-slate-800 pr-5">Target Tabungan</h1>
+        </div>
+        <div class="flex-grow overflow-y-auto px-6 py-4 no-scrollbar bg-white">
+            <div class="bg-[#E8F5E9] rounded-2xl p-5 mb-8 flex justify-between items-center shadow-sm">
+                <div><p class="text-[11px] font-bold text-slate-700 mb-1">Target Tabungan</p><h3 class="text-xl font-bold text-slate-800 mb-6">Rp1.000.000</h3><p class="text-[10px] font-bold text-slate-600">Terkumpul:</p></div>
+                <div class="w-20 h-20 rounded-full progress-ring flex items-center justify-center shadow-sm"><div class="w-16 h-16 bg-[#E8F5E9] rounded-full flex items-center justify-center"><span class="text-sm font-bold text-slate-800">40%</span></div></div>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold text-slate-800 mb-4">Riwayat Setoran</h3>
+                <div class="space-y-5">
+                    <div class="flex justify-between items-center border-b border-slate-50 pb-4"><span class="text-[11px] font-bold text-slate-800">08 Mei 2026</span><span class="text-[11px] font-bold text-slate-800">+Rp100.000</span></div>
+                    <div class="flex justify-between items-center border-b border-slate-50 pb-4"><span class="text-[11px] font-bold text-slate-800">01 Mei 2026</span><span class="text-[11px] font-bold text-slate-800">+Rp150.000</span></div>
+                </div>
+            </div>
+        </div>
+        <div class="p-6 bg-white border-t border-slate-50 shrink-0"><button class="w-full bg-[#A5D6A7] text-[#1B5E20] py-4 rounded-xl font-bold text-sm hover:bg-[#81C784] transition shadow-sm">Tambah Setoran</button></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
