@@ -57,3 +57,34 @@ Buka peramban (*browser*) dan kunjungi tautan lokal berikut:
 ```txt
 http://127.0.0.1:5000
 ```
+
+## 📁 Struktur Direktori
+
+```plaintext
+Proyek_IMK_Uangku/
+│── app.py                 # File utama routing web (Flask)
+│── static/                # Folder aset statis
+│   ├── css/style.css      # Kustomisasi CSS & penyesuaian scrollbar
+│   └── js/script.js       # Otak aplikasi (Logika Kalkulasi & LocalStorage)
+└── templates/             # Folder UI (User Interface) HTML
+    ├── index.html         # Halaman Beranda Utama
+    ├── tambah_pengeluaran.html
+    ├── tambah_pemasukan.html
+    ├── transaksi.html
+    ├── laporan.html
+    ├── laporan_mingguan.html
+    ├── profil.html
+    ├── target_tabungan.html
+    ├── notifikasi.html
+    └── warung_murah.html
+```
+
+## 👥 Tim Pengembang
+
+- **Muhammad Jepri** *(NIM: 255410014)*
+- **Fidelia Ping** *(NIM: 245410012)*
+- **MELIA FRANSISKA SUNG** *(NIM: 245410036)*
+- **WENSESLAUS KOPAQ WARAQRATU** *(NIM: 245410029)*
+---
+
+Didesain dan dikembangkan dengan ❤️ untuk membantu mahasiswa lebih melek finansial.
